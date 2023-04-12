@@ -16,6 +16,7 @@ import Friends from './components/Friends/Friends';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import Posts from './components/Posts/Posts';
 import PostDetail from './components/PostDetail/PostDetail';
+import NotFound_404 from './components/NotFound_404/NotFound_404';
 
 
 // const router = createBrowserRouter([
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '*',
+        element: <NotFound_404></NotFound_404>
       }
     ]
   }
